@@ -1,17 +1,22 @@
 package com.spring;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ApplicationContext container=new ClassPathXmlApplicationContext("beans.xml");
+		ApplicationContext container=new AnnotationConfigApplicationContext(Configure.class);
 		
-		Product pp = container.getBean("pro",Product.class);
+		Users use = container.getBean("users",Users.class);
+		System.out.println(use);
+	}
+
+	private static void applicationProperties(ApplicationContext container) {
+		Product pp = container.getBean("product",Product.class);
 		System.out.println(pp);
-		
 	}
 
 	private static void dynamicDispatchAutowiring(ApplicationContext container) {

@@ -1,9 +1,16 @@
 package com.spring;
 
-public class Users {
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+@Component
+public class Users {
+	@Value("${userId}")
 	int userId;
+	@Value("${name}")
 	String name;
+	@Autowired
 	Address address;
 	
 	public Users()

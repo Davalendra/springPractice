@@ -1,8 +1,15 @@
 package com.spring;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Address {
+	@Value("${street}")
 	String street;
+	@Value("${pincode}")
 	int pincode;
+	@Value("${contry}")
 	String contry;
 	
 	public Address()

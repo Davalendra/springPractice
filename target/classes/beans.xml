@@ -1,35 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
-        http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
-        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<!-- <beans xmlns="http://www.springframework.org/schema/beans" -->
+<!--     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" -->
+<!--     xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation=" -->
+<!--         http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd -->
+<!--         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> bean definitions here -->
+<!--         <context:component-scan base-package="com"></context:component-scan> -->
+<!--         <context:property-placeholder  location="classpath:application.properties"/> -->
         
-        <context:property-placeholder  location="classpath:application.properties"/>
         
-        <bean class="com.spring.Product"  id="pro">
-        <property name="proId" value="${proId}"></property>
-       	<property name="name" value="${name}"></property>
-       	<property name="price" value="${price}"></property>
-        </bean>
+<!--         <bean class="com.spring.Product"  id="pro"> -->
+<!--         <property name="proId" value="${proId}"></property> -->
+<!--        	<property name="name" value="${name}"></property> -->
+<!--        	<property name="price" value="${price}"></property> -->
+<!--         </bean> -->
         
-        <bean class="com.spring.Users" id="use" autowire="byName">
-        <property name="userId" value="1234"></property>
-        <property name="name" value="davali"></property>
+<!--         <bean class="com.spring.Users" id="use" autowire="byName"> -->
+<!--         <property name="userId" value="1234"></property> -->
+<!--         <property name="name" value="davali"></property> -->
       
-        </bean>
+<!--         </bean> -->
 
-		<bean class="com.spring.Address" id="address">
-		<property name="street" value="kuruva"></property>
-		<property name="pincode" value="518001"></property>
-		<property name="contry" value="INDIA"></property>
-		</bean>
+<!-- 		<bean class="com.spring.Address" id="address"> -->
+<!-- 		<property name="street" value="kuruva"></property> -->
+<!-- 		<property name="pincode" value="518001"></property> -->
+<!-- 		<property name="contry" value="INDIA"></property> -->
+<!-- 		</bean> -->
 		
-		<bean class="com.spring.Address" id="add1">
-		<property name="street" value="hyb"></property>
-		<property name="pincode" value="518002"></property>
-		<property name="contry" value="INDIAA"></property>
-		</bean>
+<!-- 		<bean class="com.spring.Address" id="add1"> -->
+<!-- 		<property name="street" value="hyb"></property> -->
+<!-- 		<property name="pincode" value="518002"></property> -->
+<!-- 		<property name="contry" value="INDIAA"></property> -->
+<!-- 		</bean> -->
 <!-- 	<bean class="com.spring.Student" id="stu"> -->
 <!-- 	<property name="StuId"  value="1"></property> -->
 <!-- 	<property name="Name" value="Davali"></property> -->
@@ -53,4 +54,4 @@
 <!-- 	</list> -->
 <!-- 	</property> -->
 <!-- 	</bean> -->
-</beans>
+<!-- </beans> -->
