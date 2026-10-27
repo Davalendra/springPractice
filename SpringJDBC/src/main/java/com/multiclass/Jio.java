@@ -1,0 +1,14 @@
+package com.multiclass;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Jio implements Sim{
+
+	@Override
+	public void call() {
+		System.out.println("Jio is Calling");
+	}
+	
+
+}
